@@ -1,9 +1,20 @@
+import { Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import LoginPage from './pages/LoginPage';
 
 function App() {
-  return <div className='App'>
-    <h1>React</h1>
-  </div>;
+  return (
+    <div className='App'>
+      <Header />
+      <Route path={'/'} exact>
+        <h1>Home page</h1>
+      </Route>
+      <Route path={'/login'}>
+        <LoginPage />
+      </Route>
+    </div>
+  );
 }
 
 export default App;
