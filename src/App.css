@@ -22,3 +22,9 @@ body {
     background-color: rgb(72, 72, 72);
   
   }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
